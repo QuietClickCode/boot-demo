@@ -7,7 +7,8 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 2018/3/9.
+ * user
+ * Created by zwq on 2018/3/9.
  */
 @Entity
 @Table(name="user")

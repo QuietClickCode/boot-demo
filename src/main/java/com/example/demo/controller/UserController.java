@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 
 /**
- * Created by Administrator on 2018/3/9.
+ * Controller
+ * Created by zwq on 2018/3/9.
  */
 @Controller
 @EnableAutoConfiguration

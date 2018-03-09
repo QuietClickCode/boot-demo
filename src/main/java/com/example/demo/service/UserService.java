@@ -3,8 +3,9 @@ package com.example.demo.service;
 import com.example.demo.domain.User;
 
 /**
- * Created by Administrator on 2018/3/9.
+ * Service
+ * Created by zwq on 2018/3/9.
  */
 public interface UserService {
-    public void save(User user);
+    void save(User user);
 }

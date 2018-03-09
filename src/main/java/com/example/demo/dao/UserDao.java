@@ -6,7 +6,8 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * Created by Administrator on 2018/3/9.
+ * Repository
+ * Created by zwq on 2018/3/9.
  */
 //@Repository
 //@Table(name="user")
