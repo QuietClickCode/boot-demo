@@ -1,13 +1,17 @@
 package com.example.demo.domain;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * Created by Administrator on 2018/3/9.
  */
 @Entity
 @Table(name="user")
-public class User {
+public class User implements Serializable {
     private Integer id;
     private String username;
     private Integer age;
