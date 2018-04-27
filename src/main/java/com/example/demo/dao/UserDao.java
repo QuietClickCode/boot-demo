@@ -12,8 +12,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 //@Repository
 //@Table(name="user")
 //@Qualifier("userDao")
-@CacheConfig(cacheNames = "users")
+//@CacheConfig(cacheNames = "users")
 public interface UserDao extends JpaRepository<User, Long> {
-    @Cacheable(key = "#p0")
+//    @Cacheable(key = "#p0")
     public User save(User user);
 }
