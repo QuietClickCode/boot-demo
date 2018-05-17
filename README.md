@@ -8,7 +8,9 @@ Hadoop最简单JAVA应用案列-计算单词出现数 com.example.demo.hadoop
 
 仅用于记录学习记录
 
-**`Hadoop完全分布式安装部署`**--namenode 1 / datanode 2：
+**`Hadoop完全分布式安装部署`**
+
+        --namenode 1 / datanode 2
 
 **注意点：**
 
