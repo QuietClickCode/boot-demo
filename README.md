@@ -6,6 +6,8 @@ spring boot+Jpa(Hibernate)
 
 Hadoop最简单JAVA应用案列-计算单词出现数 com.example.demo.hadoop
 
+CatDemoRead 远程访问HDFS 读取文件并打印(注:运行时需在本地下载hadoop并安装winutils.exe在../hadoop/bin目录下)
+
 仅用于记录学习记录
 
 ****`Hadoop完全分布式安装部署`****

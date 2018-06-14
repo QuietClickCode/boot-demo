@@ -7,13 +7,15 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * Repository
+ * @author zwq
  * Created by zwq on 2018/3/9.
  */
-//@Repository
-//@Table(name="user")
-//@Qualifier("userDao")
-//@CacheConfig(cacheNames = "users")
 public interface UserDao extends JpaRepository<User, Long> {
-//    @Cacheable(key = "#p0")
+    /**
+     * 新增用户
+     * @param user
+     * @return
+     */
+    @Override
     public User save(User user);
 }

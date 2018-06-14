@@ -7,6 +7,7 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
+ * @author zwq
  * user
  * Created by zwq on 2018/3/9.
  */

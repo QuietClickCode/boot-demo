@@ -10,6 +10,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+/**
+ * @author zwq
+ */
 @ComponentScan(basePackages="com.example.demo")
 @SpringBootApplication
 @EnableScheduling

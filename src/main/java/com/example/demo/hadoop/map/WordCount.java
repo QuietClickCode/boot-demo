@@ -9,11 +9,15 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+/**
+ * @author zwq
+ */
 public class WordCount {
     public static class WordCountMap extends Mapper<LongWritable, Text, Text, IntWritable> {
         private final IntWritable one = new IntWritable(1);
         private Text word = new Text();
 
+        @Override
         public void map(LongWritable key, Text value, Context context)
                 throws IOException, InterruptedException {
             String line = value.toString();
@@ -27,6 +31,7 @@ public class WordCount {
 
     public static class WordCountReduce extends
             Reducer<Text, IntWritable, Text, IntWritable> {
+        @Override
         public void reduce(Text key, Iterable<IntWritable> values,
                            Context context) throws IOException, InterruptedException {
             int sum = 0;

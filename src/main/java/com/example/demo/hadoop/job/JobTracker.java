@@ -11,10 +11,16 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
+/**
+ * @author zwq
+ */
 public class JobTracker {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
-        Job job = new Job(conf);
+        conf.addResource("classpath:/hadoop/core-site.xml");
+        conf.addResource("classpath:/hadoop/hdfs-site.xml");
+        conf.addResource("classpath:/hadoop/mapred-site.xml");
+        Job job = Job.getInstance(conf);
         job.setJarByClass(WordCount.class);
         job.setJobName("wordcount");
         job.setOutputKeyClass(Text.class);
@@ -23,8 +29,8 @@ public class JobTracker {
         job.setReducerClass(WordCount.WordCountReduce.class);
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
-        FileInputFormat.addInputPath(job, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        FileInputFormat.addInputPath(job, new Path("/input"));
+        FileOutputFormat.setOutputPath(job, new Path("/output"));
         job.waitForCompletion(true);
     }
 
