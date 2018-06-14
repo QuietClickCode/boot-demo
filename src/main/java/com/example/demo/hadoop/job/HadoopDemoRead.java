@@ -17,7 +17,7 @@ import java.net.URI;
  * @author zwq
  * @date 2018/6/14 15:55
  */
-public class CatDemoRead {
+public class HadoopDemoRead {
     public static void main(String[] args) {
         System.setProperty("hadoop.home.dir", "D:\\Tools\\hadoop-2.8.0");
         Configuration conf = new Configuration();
@@ -30,7 +30,8 @@ public class CatDemoRead {
         try {
 
             //得到文件系统的实例
-            FileSystem fs = FileSystem.get(URI.create(uri), conf); //URI.create(uri)要创建
+            //URI.create(uri)要创建
+            FileSystem fs = FileSystem.get(URI.create(uri), conf);
 
             //通过FileSystem的open方法打开一个指定的文件
             in = fs.open(new Path(uri));
