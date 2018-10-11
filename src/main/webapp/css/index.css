@@ -1,0 +1,52 @@
+body {
+    background-image: url("/images/one-piece.jpg");
+    background-size:cover;
+    background-position:50% 90%;
+    background-attachment:fixed;
+    padding: 0 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu a {
+    display: block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+.target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+}
+
+.menu a,
+.target {
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}

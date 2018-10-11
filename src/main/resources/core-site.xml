@@ -31,7 +31,7 @@
 
         <name>fs.default.name</name>
 
-        <value>hdfs://localhost.hadoop1:9000</value>
+        <value>hdfs://192.168.2.48:9000</value>
 
    </property>
 </configuration>
