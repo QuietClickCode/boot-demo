@@ -4,10 +4,11 @@ spring boot+Jpa(Hibernate)
 
 整合Druid数据源
 
+整合JMS(ActiveMQ)  实现P2P和Pub/Sub模式测试类
 
 仅用于记录初学学习记录
 
-Hadoop最简单JAVA应用案列-计算单词出现数 com.example.demo.hadoop
+Hadoop最简单JAVA应用案列-计算单词出现数 com.example.demo.utils.hadoop
 
 HadoopDemoRead 远程访问HDFS 读取文件并打印(注:运行时需在本地下载hadoop并安装winutils.exe在../hadoop/bin目录下)
 

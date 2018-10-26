@@ -4,6 +4,7 @@ import com.example.demo.domain.User;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 /**
  * Repository
@@ -18,4 +19,7 @@ public interface UserDao extends JpaRepository<User, Long> {
      */
     @Override
     public User save(User user);
+
+    @Query("select u from User u where u.username = ?1")
+    public User selectByName(String name);
 }

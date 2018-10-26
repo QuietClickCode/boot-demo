@@ -1,6 +1,6 @@
-package com.example.demo.hadoop.job;
+package com.example.demo.utils.hadoop.job;
 
-import com.example.demo.hadoop.map.WordCount;
+import com.example.demo.utils.hadoop.map.WordCount;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;

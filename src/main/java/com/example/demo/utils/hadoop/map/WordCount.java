@@ -1,4 +1,4 @@
-package com.example.demo.hadoop.map;
+package com.example.demo.utils.hadoop.map;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;

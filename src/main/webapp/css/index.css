@@ -1,12 +1,12 @@
 body {
-    background-image: url("/images/one-piece.jpg");
-    background-size:cover;
-    background-position:50% 90%;
-    background-attachment:fixed;
-    padding: 0 20px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #eee;
+    overflow: hidden;
 }
-
+canvas {
+    background-color: #eee;
+    display: block;
+    margin: 0 auto;
+}
 h1 {
     text-align: center;
     margin: 80px 0;
@@ -44,7 +44,9 @@ h1 {
     -webkit-transform: translateX(-60px);
     transform: translateX(-60px);
 }
-
+/*.menu-div {*/
+    /*position: absolute; left: 36%;top: 20px;*/
+/*}*/
 .menu a,
 .target {
     -webkit-transition: all .35s ease-in-out;

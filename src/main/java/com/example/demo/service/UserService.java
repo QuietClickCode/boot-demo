@@ -13,4 +13,10 @@ public interface UserService {
      * @param user
      */
     void save(User user);
+
+    /**
+     * 根据用户名查询
+     * @param name
+     */
+    User selectByName(String name);
 }

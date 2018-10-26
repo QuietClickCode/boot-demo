@@ -1,4 +1,4 @@
-package com.example.demo.hadoop.job.kpi;
+package com.example.demo.utils.hadoop.job.kpi;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;

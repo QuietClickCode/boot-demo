@@ -1,10 +1,8 @@
 package com.example.demo.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * @author zwq
@@ -20,7 +18,7 @@ public class User implements Serializable {
     private Integer customerid;
 
     @Id
-    @Column(name="id")
+    @Column(name= "id")
     public Integer getId() {
         return id;
     }
@@ -29,7 +27,8 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    @Column(name="username")
+    @Basic
+    @Column(name= "username")
     public String getUsername() {
         return username;
     }
@@ -38,7 +37,8 @@ public class User implements Serializable {
         this.username = username;
     }
 
-    @Column(name="age")
+    @Basic
+    @Column(name= "age")
     public Integer getAge() {
         return age;
     }
@@ -47,7 +47,8 @@ public class User implements Serializable {
         this.age = age;
     }
 
-    @Column(name="customerid")
+    @Basic
+    @Column(name= "customerid")
     public Integer getCustomerid() {
         return customerid;
     }
@@ -64,5 +65,22 @@ public class User implements Serializable {
                 ", age=" + age +
                 ", customerid=" + customerid +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id) &&
+                Objects.equals(username, user.username) &&
+                Objects.equals(age, user.age) &&
+                Objects.equals(customerid, user.customerid);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, age, customerid, username);
     }
 }
