@@ -37,6 +37,7 @@ public class MysqlTest {
     private UserService userService;
     @Test
     public void t1(){
+
         User user = userService.selectByName("zwq");
         System.out.println(user);
     }
