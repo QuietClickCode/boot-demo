@@ -32,6 +32,7 @@ import java.util.List;
 @SpringBootTest(classes = DemosshApplication.class)
 @WebAppConfiguration
 public class MysqlTest {
+    //qwe
     @Autowired
     private UserService userService;
     @Test
